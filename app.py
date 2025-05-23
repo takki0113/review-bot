@@ -18,9 +18,10 @@ CORS(app)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # JSONデータ読み込み
-store_json_path = os.path.join(os.path.dirname(__file__), "store.json")
-with open(store_json_path, "r", encoding="utf-8") as f:
+basedir = os.path.abspath(os.path.dirname(__file__))
+with open(os.path.join(basedir, 'store.json'), 'r', encoding='utf-8') as f:
     stores = json.load(f)
+
 
 # ホーム確認用
 @app.route("/")
@@ -62,6 +63,4 @@ def generate_review():
         print("❌ エラー内容:", e)  # 追加
         return jsonify({"error": str(e)}), 500
 
-# 起動
-if __name__ == "__main__":
-    app.run(debug=True)
+
