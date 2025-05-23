@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ store.title }}</title>
+  <title>Review boost</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <img src="{{ store.hero_image }}" alt="店舗画像">
   </div>
   <div class="hero-text">
-    <h1>{{ store.store_name }}<br><span>ご来店ありがとうございます</span></h1>
+    <h1><span>ご来店ありがとうございます</span></h1>
     <p>アンケートのご協力をお願いします。</p>
   </div>
 </section>
@@ -62,7 +62,7 @@
 </section>
 
 <footer class="footer">
-  <p>{{ store.store_name }}</p>
+  <p>Review boost</p>
 </footer>
 
 <script>
