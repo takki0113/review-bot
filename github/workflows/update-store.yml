@@ -1,0 +1,39 @@
+name: Auto Update store.json
+
+on:
+  schedule:
+    - cron: '0 * * * *'     # 毎時0分に自動実行（UTC時間）
+  workflow_dispatch:         # GitHub上から手動実行できるようにもする
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ✅ リポジトリを取得
+        uses: actions/checkout@v3
+
+      - name: 🐍 Python をセットアップ
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: 📦 依存パッケージをインストール
+        run: |
+          pip install -r requirements.txt
+
+      - name: 🔐 Google認証情報をファイルに書き出す
+        run: |
+          echo "${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}" > credentials.json
+
+      - name: 🧠 store.json を自動生成
+        run: |
+          python generate_store_json.py
+
+      - name: ✅ store.json をコミットしてプッシュ
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add store.json
+          git commit -m "chore: auto-update store.json from sheet" || echo "✅ No changes"
+          git push
