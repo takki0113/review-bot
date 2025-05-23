@@ -18,8 +18,8 @@ CORS(app)
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 # JSONデータ読み込み
-basedir = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(basedir, 'store.json'), 'r', encoding='utf-8') as f:
+json_path = os.path.join(os.path.dirname(__file__), 'store.json')
+with open(json_path, 'r', encoding='utf-8') as f:
     stores = json.load(f)
 
 
