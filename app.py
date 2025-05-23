@@ -31,10 +31,14 @@ def home():
 # 各店舗ページ
 @app.route("/store/<store_id>")
 def store_page(store_id):
+    print(f"📍 リクエストされた store_id: {store_id}")
+    print(f"🗂️ 登録されている store_ids: {[s['store_id'] for s in stores]}")
+    
     store_data = next((s for s in stores if s["store_id"] == store_id), None)
     if not store_data:
         return "店舗が見つかりませんでした。", 404
     return render_template("store.html", store=store_data)
+
 
 # 口コミ生成API
 @app.route("/api/generate", methods=["POST"])
