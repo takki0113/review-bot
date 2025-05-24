@@ -49,7 +49,8 @@ def generate_review():
         return jsonify({"error": "プロンプトが空です"}), 400
 
     try:
-        response = openai.ChatCompletion.create(
+        client = openai.OpenAI()  # ✅ 新スタイル
+        response = client.chat.completions.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "あなたは親しみやすく自然な日本語の口コミ文を作るアシスタントです。"},
@@ -64,6 +65,7 @@ def generate_review():
     except Exception as e:
         print("❌ エラー内容:", e)
         return jsonify({"error": str(e)}), 500
+
 
 
 # デバッグ実行用（Renderでは不要）
