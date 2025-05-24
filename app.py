@@ -3,45 +3,42 @@ from flask_cors import CORS
 import os
 import json
 from dotenv import load_dotenv
-from openai import OpenAI
+import openai
 
-# 環境変数読み込み
+# 環境変数の読み込み
 load_dotenv()
 
+# OpenAI APIキー設定
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Flask 初期化
+# Flask アプリ初期化
 app = Flask(__name__)
 CORS(app)
 
-# OpenAI クライアント初期化
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-
-# JSONデータ読み込み
+# store.json の読み込み
 basedir = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(basedir, 'store.json'), 'r', encoding='utf-8') as f:
+store_path = os.path.join(basedir, 'store.json')
+with open(store_path, 'r', encoding='utf-8') as f:
     stores = json.load(f)
+print("✅ store.json 読み込み成功。全件数:", len(stores))
 
-print("✅ store.json 読み込み成功。全件数:", len(stores))  # ←Renderログで確認用！
 
-
-# ホーム確認用
+# ホームページ
 @app.route("/")
 def home():
     return "口コミAIツール：稼働中です！ /store/<id> にアクセスしてください"
 
-# 各店舗ページ
+# 店舗ページ表示
 @app.route("/store/<store_id>")
 def store_page(store_id):
     print(f"📍 リクエストされた store_id: {store_id}")
-    print(f"🗂️ 登録されている store_ids: {[s['store_id'] for s in stores]}")
-    
     store_data = next((s for s in stores if s["store_id"] == store_id), None)
     if not store_data:
         return "店舗が見つかりませんでした。", 404
     return render_template("store.html", store=store_data)
 
 
-# 口コミ生成API
+# 口コミ生成エンドポイント
 @app.route("/api/generate", methods=["POST"])
 def generate_review():
     data = request.get_json()
@@ -67,3 +64,8 @@ def generate_review():
     except Exception as e:
         print("❌ エラー内容:", e)
         return jsonify({"error": str(e)}), 500
+
+
+# デバッグ実行用（Renderでは不要）
+if __name__ == "__main__":
+    app.run(debug=True)
