@@ -8,8 +8,6 @@ from openai import OpenAI
 # 環境変数読み込み
 load_dotenv()
 
-print("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", os.getenv("OPENAI_API_KEY"))  # ←これ！
-
 # Flask 初期化
 app = Flask(__name__)
 CORS(app)
