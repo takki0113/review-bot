@@ -60,7 +60,8 @@
         "options": [
           "接客がいい",
           "技術力がある",
-          "天兄の雰囲気がオシャレ"
+          "店内の雰囲気がオシャレ",
+          "コスパがいい"
         ]
       },
       {
@@ -75,9 +76,9 @@
     "store_id": "2",
     "store_name": "Stimu nail",
     "title": "ネイルサロン",
-    "hero_image": "file:///Users/takizawamakoto/Downloads/%E4%B8%B2%E7%84%BC%E5%B8%82%E5%A0%B4%E6%A7%98%E3%83%A8%E3%82%B3%E7%B4%8D%E5%93%81%E7%94%A8_page-0001.jpg",
-    "store_logo": "/Users/takizawamakoto/Downloads/串焼市場様ヨコ納品用_page-0001.jpg",
-    "google_img": "",
+    "hero_image": "https://i.imgur.com/hJ3oZGA.jpeg",
+    "store_logo": "https://i.imgur.com/hJ3oZGA.jpeg",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "https://g.page/r/CQZK9aLDn-QGEBM/review",
     "store_link": null,
     "questions": [
@@ -97,25 +98,48 @@
         "id": "q2",
         "label": "性別",
         "type": "select",
-        "options": []
+        "options": [
+          "男性",
+          "女性",
+          "未回答"
+        ]
       },
       {
         "id": "q3",
         "label": "年齢",
         "type": "select",
-        "options": []
+        "options": [
+          "10代",
+          "20代",
+          "30代",
+          "40代",
+          "50代",
+          "60代"
+        ]
       },
       {
         "id": "q4",
-        "label": "年齢",
+        "label": "コース名・サービス名",
         "type": "select",
-        "options": []
+        "options": [
+          "パラジェル",
+          "フィルイン",
+          "韓国ネイル",
+          "ジェルネイル",
+          "シンプルネイル",
+          "定額ネイル"
+        ]
       },
       {
         "id": "q5",
-        "label": "年齢",
+        "label": "良かった点",
         "type": "select",
-        "options": []
+        "options": [
+          "接客がいい",
+          "技術力がある",
+          "店内の雰囲気がオシャレ",
+          "コスパがいい"
+        ]
       },
       {
         "id": "q6",
@@ -131,7 +155,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -161,7 +185,7 @@
       },
       {
         "id": "q5",
-        "label": "年齢",
+        "label": "良かった点",
         "type": "select",
         "options": []
       },
@@ -179,7 +203,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -227,7 +251,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -275,7 +299,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -323,7 +347,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -371,7 +395,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -419,7 +443,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -467,7 +491,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -515,7 +539,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -563,7 +587,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -611,7 +635,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -659,7 +683,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -707,7 +731,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -755,7 +779,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -803,7 +827,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -851,7 +875,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -899,7 +923,7 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -947,7 +971,295 @@
     "title": "｜アンケート",
     "hero_image": "",
     "store_logo": "",
-    "google_img": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
+    "google_link": "",
+    "store_link": null,
+    "questions": [
+      {
+        "id": "q1",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q2",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q3",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q4",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q5",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q6",
+        "label": null,
+        "type": "textarea",
+        "placeholder": "例：スタッフさんがとても親切でした。"
+      }
+    ]
+  },
+  {
+    "store_id": "",
+    "store_name": "",
+    "title": "｜アンケート",
+    "hero_image": "",
+    "store_logo": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
+    "google_link": "",
+    "store_link": null,
+    "questions": [
+      {
+        "id": "q1",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q2",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q3",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q4",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q5",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q6",
+        "label": null,
+        "type": "textarea",
+        "placeholder": "例：スタッフさんがとても親切でした。"
+      }
+    ]
+  },
+  {
+    "store_id": "",
+    "store_name": "",
+    "title": "｜アンケート",
+    "hero_image": "",
+    "store_logo": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
+    "google_link": "",
+    "store_link": null,
+    "questions": [
+      {
+        "id": "q1",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q2",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q3",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q4",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q5",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q6",
+        "label": null,
+        "type": "textarea",
+        "placeholder": "例：スタッフさんがとても親切でした。"
+      }
+    ]
+  },
+  {
+    "store_id": "",
+    "store_name": "",
+    "title": "｜アンケート",
+    "hero_image": "",
+    "store_logo": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
+    "google_link": "",
+    "store_link": null,
+    "questions": [
+      {
+        "id": "q1",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q2",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q3",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q4",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q5",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q6",
+        "label": null,
+        "type": "textarea",
+        "placeholder": "例：スタッフさんがとても親切でした。"
+      }
+    ]
+  },
+  {
+    "store_id": "",
+    "store_name": "",
+    "title": "｜アンケート",
+    "hero_image": "",
+    "store_logo": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
+    "google_link": "",
+    "store_link": null,
+    "questions": [
+      {
+        "id": "q1",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q2",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q3",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q4",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q5",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q6",
+        "label": null,
+        "type": "textarea",
+        "placeholder": "例：スタッフさんがとても親切でした。"
+      }
+    ]
+  },
+  {
+    "store_id": "",
+    "store_name": "",
+    "title": "｜アンケート",
+    "hero_image": "",
+    "store_logo": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
+    "google_link": "",
+    "store_link": null,
+    "questions": [
+      {
+        "id": "q1",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q2",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q3",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q4",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q5",
+        "label": "",
+        "type": "select",
+        "options": []
+      },
+      {
+        "id": "q6",
+        "label": null,
+        "type": "textarea",
+        "placeholder": "例：スタッフさんがとても親切でした。"
+      }
+    ]
+  },
+  {
+    "store_id": "",
+    "store_name": "",
+    "title": "｜アンケート",
+    "hero_image": "",
+    "store_logo": "",
+    "google_img": "https://i.imgur.com/NGYI7cU.png",
     "google_link": "",
     "store_link": null,
     "questions": [
@@ -989,6 +1301,4 @@
       }
     ]
   }
-] 
-
-
+]
