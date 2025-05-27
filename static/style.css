@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: 'Kiwi Maru', 'Noto Sans JP', sans-serif;
     background-color: #fffbe9;
     color: #333;
     line-height: 1.6;
@@ -61,7 +61,7 @@ body {
 
 /* h1 → 右寄せ */
 .hero-text h1 {
-    font-size: 4.5vw;
+    font-size: 5vw;
     font-weight: bold;
     line-height: 1.4;
     margin: 0;
@@ -72,7 +72,7 @@ body {
 
 /* p → 左寄せ */
 .hero-text p {
-    font-size: 3.5vw;
+    font-size: 4vw;
     color: #333;
     margin: 0;
     font-weight: bold;
