@@ -55,6 +55,7 @@ for _, row in df.iterrows():
         "hero_image": row.get("画像URL"),
         "store_logo": row.get("投稿サイトロゴURL"),
         "google_link": row.get("Google投稿URL"),
+        "google_img": row.get("Google画像URL"),  # ← これを追加
         "store_link": row.get("投稿サイトURL"),
         "questions": questions
     }
