@@ -5,13 +5,13 @@ import json
 from dotenv import load_dotenv
 import openai
 
-# 環境変数読み込み
+# .env ファイルの読み込み
 load_dotenv()
 
-# OpenAI クライアント初期化
-client = openai.OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# OpenAI APIキー設定
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
-# Flask 初期化
+# Flask アプリケーション初期化
 app = Flask(__name__)
 CORS(app)
 
@@ -59,7 +59,7 @@ def generate_review():
                 {"role": "user", "content": prompt}
             ],
             temperature=0.7,
-            max_tokens=350
+            max_tokens=600
         )
         result = response.choices[0].message.content.strip()
         print("✅ 生成成功:", result)
