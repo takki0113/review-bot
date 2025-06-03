@@ -5,7 +5,7 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 # スプレッドシート認証
 scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-creds = ServiceAccountCredentials.from_json_keyfile_name('credentials/idyllic-kit-451707-e2-f4b8c26a1c26.json', scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name('credentials/idyllic-kit-451707-e2-07069bcdc17f.json', scope)
 client = gspread.authorize(creds)
 
 # 対象のスプレッドシートとシートを指定
